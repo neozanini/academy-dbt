@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_salesreason
+    columns:
+      - name: pk_motivo
+        description: Chave primária da dim_salesreason
+        tests:
+          - unique
+          - not_null
+      - name: id_motivo
+        description: Chave primária da stg_salesreason
+      - name: id_pedido
+        description: Chave primária da stg_salesorderheadersalesreason
+      - name: motivo
+        description: Nome do motivo
+      - name: tipo_motivo
+        description: Classificação do motivo

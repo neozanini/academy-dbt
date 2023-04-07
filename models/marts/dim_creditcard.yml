@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_creditcard
+    description: Dimensão com informações de cartão de crédito
+    columns:
+      - name: pk_cartao
+        description: Chave primária da dim_creditcard
+        tests:
+          - unique
+          - not_null
+      
+      - name: id_cartao
+        description: Chave primária da stg_creditcard
+
+      - name: tipo_cartao
+        description: Tipo do cartão referente ao id_cartao

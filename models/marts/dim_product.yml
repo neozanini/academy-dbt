@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: Dimensão com informações do produto
+    columns:
+      - name: pk_produto
+        description: Chave primária da dim_product
+        tests:
+          - unique
+          - not_null      
+      - name: id_produto
+        description: Chave primária da stg_product
+      - name: nome_produto
+        description: Nome do produto referente ao id_produto
