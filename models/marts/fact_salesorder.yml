@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: fact_salesorder
+    columns:
+      - name: pk_pedido
+        description: Chave primária da tabela de fato
+        tests:
+          - unique
+          - not_null
+      - name: id_pedido
+        description: Chave primária da tabela stg_salesorderheader
+      - name: id_cliente
+        description: Chave primária da tabela stg_customer
+      - name: id_produto
+        description: Chave primária da tabela stg_product
+      - name: id_territorio
+        description: Chave da tabela de território
+      - name: id_cartao
+        description: Chave primária da tabela stg_creditcard
+      - name: data_pedido
+        description: Data do pedido
+      - name: status_pedido
+        description: Status do pedido
+      - name: valor_total
+        description: Valor total do pedido
+      - name: quantidade
+        description: Quantidade do pedido
+      - name: preco_unitario
+        description: Preço unitário do pedido
+      - name: desconto_unitario
+        description: Desconto unitário do pedido

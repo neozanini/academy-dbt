@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: pk_cliente
+        description: Chave primária da dimensão cliente
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: Chave primária da stg_customer
+          
+      - name: nome
+        description: Nome do cliente
+        test:
+          - not_null
+
+      - name: sobrenome
+        description: Sobrenome do cliente
+        test:
+          - not_null
+
+      - name: nome_completo
+        description: Nome completo do cliente

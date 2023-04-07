@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_address 
+    description: Dimensão com informação de endereço, estado e país
+    columns:
+      - name: pk_endereco
+        description: Chave primária da dim_address
+        tests:
+          - unique
+          - not_null
+      
+      - name: id_endereco
+        description: Chave primária da stg_address
+
+      - name: cidade
+        description: Nome da cidade referente ao id_endereco na stg_address
+
+      - name: id_estado
+        description: Chave primária da stg_stateprovince
+
+      - name: estado
+        description: Nome do estado referente ao id_estado na stg_stateprovince
+
+      - name: codigo_pais
+        description: Chave primária da stg_countryrgion
+
+      - name: pais
+        description: Nome do país referente ao codigo_pais na stg_countryrgion
