@@ -35,4 +35,4 @@ models:
       - name: sales_gross_value
         description: Valor Bruto da Venda
       - name: sales_net_value
-        description: Valor Liquido da Venda               
+        description: Valor Liquido da Venda       
